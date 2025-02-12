@@ -30,7 +30,19 @@ export default function Home() {
           
           {/* Move CTA under carousel for mobile */}
           <div className="mt-8 lg:hidden">
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <div className="flex flex-col gap-4 max-w-md mx-auto">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Input 
+                  type="text" 
+                  placeholder="First Name"
+                  className="w-full h-12 text-lg"
+                />
+                <Input 
+                  type="text" 
+                  placeholder="Last Name"
+                  className="w-full h-12 text-lg"
+                />
+              </div>
               <Input 
                 type="email" 
                 placeholder="Enter your email"
@@ -45,16 +57,30 @@ export default function Home() {
           
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <Input 
-                type="email" 
-                placeholder="Enter your email"
-                className="w-full h-12 text-lg"
-              />
-              <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 text-lg h-12 px-8">
-                Join the Community
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </Button>
+            <div className="flex flex-col gap-4 max-w-md">
+              <div className="flex gap-4">
+                <Input 
+                  type="text" 
+                  placeholder="First Name"
+                  className="w-full h-12 text-lg"
+                />
+                <Input 
+                  type="text" 
+                  placeholder="Last Name"
+                  className="w-full h-12 text-lg"
+                />
+              </div>
+              <div className="flex gap-4">
+                <Input 
+                  type="email" 
+                  placeholder="Enter your email"
+                  className="w-full h-12 text-lg"
+                />
+                <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 text-lg h-12 px-8">
+                  Join the Community
+                  <ChevronRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
